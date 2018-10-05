@@ -32,6 +32,8 @@ You will find in this repository everything you need to complete the game; Asset
 ## Requirements
 We are about to list screen by screen the required application requirements. This section will be followed by the optional requirements.
 
+- Usage of React Router
+
 **Home page**
 
  - If the user click "New Game", the new game modal appear.
@@ -65,7 +67,6 @@ We are about to list screen by screen the required application requirements. Thi
 ## Optional Requirements
 
  - Usage of redux
- - Usage of React Router
  - Usage of Sass
  - On the new game page, add the possibility to let player choose witch one will have the "0" and the "x" .
  - On the credit page, instead of having an hardcoded credit text bloc, fetch all of the characters name using this api call http://api.tvmaze.com/people/1/castcredits and use the result to fetch all characters name
