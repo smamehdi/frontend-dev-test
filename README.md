@@ -29,6 +29,9 @@ You will find in this repository everything you need to complete the game; Asset
 ## The assets
 [Assets files](https://github.com/seedboxtech/frontend-dev-test/tree/master/test/assets)
 
+## The Psd File
+[Psd file](https://github.com/seedboxtech/frontend-dev-test/raw/master/test/TicTacToe_PSD.zip)
+
 ## Requirements
 We are about to list screen by screen the required application requirements. This section will be followed by the optional requirements.
 
