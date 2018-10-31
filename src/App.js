@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import HomePage from './components/homePage.js'
+import NewGame from './components/newGame.js'
+import Credits from './components/credits.js'
 import './App.css';
+import 'semantic-ui-css/semantic.min.css';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "../node_modules/react-router-dom";
 
-const mapStateToProps = function(state,props) {
-  return {}
-}
 
-const mapDispatchToProps = dispatch => ({
-  
-});
-
+const src1 = './assets/logo.svg'
 class App extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.state = { open: false, usernameOne : "" , usernameTwo : "" }
+  }
+  show = size => () => this.setState({ size, open: true })
+  close = () => this.setState({ open: false })
+  /*renderNewGame = (routerData) => {
+    let users = routerData.match.params.usernames.split("&")
+    this.setState({ usernameOne : users[0], usernameTwo :users[1]})
     return (
-      <div className="App">
-        <h1 className="App-title">A Tic Tac Toe Game will be created</h1>
+      <div>
+        <NewGame usernameOne = {this.state.usernameOne} usernameTwo = {this.state.usernameTwo} />
       </div>
+    )
+  }*/
+  render() {
+    const { open, size } = this.state
+    return (
+        <Router>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/Credits" component={Credits} />
+            <Route exact path='/newGame/:usernames' component={NewGame}/>
+          </Switch>
+        </Router>
     );
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
