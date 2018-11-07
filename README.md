@@ -1,14 +1,3 @@
-
-# Frontend Development Test
-
-Hi !
-
-First of all. we want to take the time to thank you for doing our small in house react test and maybe work in our team eventually :)! One of the goal of this test is to have an overview of your technical and creative skills.
-
-This test is a Tic Tac Toe game. You’ll have to integrate the different application screens and follow the requirements to implement the logic. 
-
-You will find in this repository everything you need to complete the game; Assets, psd files, boilerplate react code.
-
 ## The screens
 
 **home page**
@@ -27,10 +16,10 @@ You will find in this repository everything you need to complete the game; Asset
 ![](https://github.com/seedboxtech/frontend-dev-test/blob/master/test/visual-screens/Interface_GameWin.jpg?raw=true)
 
 ## The assets
-[Assets files](https://github.com/seedboxtech/frontend-dev-test/tree/master/test/assets)
+[Assets files](https://github.com/smamehdi/frontend-dev-test/tree/master/test/assets)
 
 ## The Psd File
-[Psd file](https://github.com/seedboxtech/frontend-dev-test/raw/master/test/TicTacToe_PSD.zip)
+[Psd file](https://github.com/smamehdi/frontend-dev-test/raw/master/test/TicTacToe_PSD.zip)
 
 ## Requirements
 We are about to list screen by screen the required application requirements. This section will be followed by the optional requirements.
@@ -67,20 +56,5 @@ We are about to list screen by screen the required application requirements. Thi
  - If the user click "restart", the modal disappear and the board came back in its initial state.
  - if the user click "quit", the user will land on the home page.
 
-## Optional Requirements
-
- - Usage of redux
- - Usage of Sass
- - On the new game page, add the possibility to let player choose witch one will have the "0" and the "x" .
- - On the credit page, instead of having an hardcoded credit text bloc, fetch all of the characters name using this api call http://api.tvmaze.com/people/1/castcredits and use the result to fetch all characters name
-
-## Evaluation Criteria
-
- - All Requirements are respected and functional.
- - The Html semantic
- - The layout respect the given design
- - The css
- - The way the project is structured (ex: components,  files structures...)
- - You can also add any extra to the application, make sure that they respect the initial requirement and when you will send us your project please mention them.
 
 
